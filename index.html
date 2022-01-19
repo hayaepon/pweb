@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>tugas p.web</title>
+   </head>
+<body>
+
+<p><h3>Form Pendaftaran Mahasiswa</h3></p>
+
+<form id="myForm" action="/action_page.php">
+  Nama : <input type="text" id="nama"><br><br>
+  Jenis kelamin: <input type="radio" id="jenis_kelamin" value="pria">pria
+  <input type="radio" id="jenis_kelamin" value="wanita">wanita<br><br>
+  prodi : <select id="prodi">
+  		<option value = "-1" selected>-pilih-</option>
+        <option value = "Teknik Informatika">Teknik informatika</option>
+        <option value ="Sistem Informasi">sistem informasi</option></select><br><br>
+   Hoby : <input type="checkbox" name="hoby" value="coding">coding
+   <input type="checkbox" id="hoby" value="jalan-jalan">jalan-jalan
+   <input type="checkbox" id="hoby" value="makan">makan<br><br>
+  <button onclick="kirim()">kirim</button><br> 
+</form>
+<p id="container"></p>
+<script>
+function kirim() {
+var jenis_kelamin=document.getElementById("myform").nama.values;
+var p_kontainer=document.getElementById("container");
+if(jenis_kelamin=="pria")
+{
+p_kontainer.innerHTML ="pria";
+}
+else if (jenis_kelamin=="wanita")
+p_kontainer.innerHTML="wanita")
+}
+}
+</script>
+
+</body>
+</html>
+ 
